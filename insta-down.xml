@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:responsive='true' expr:dir='data:blog.languageDirection' lang='en-US' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+ <head>
+ <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+  <b:skin><![CDATA[
+
+     body{background:#e0e0e0 }
+     * {
+     box-sizing: border-box;
+   
+     }
+	h6{
+	font-family:"Libre Baskerville";
+
+	}
+     html, body {
+     position: relative;
+     height: 100%;
+
+     }
+     body {
+     margin: 0;
+     padding: 0;
+     font-family: "consolas",monospace;
+     font-size: 15px;
+     line-height: 1.5;
+     background: #f9f9f9;
+     color: #2e2e2e;
+font-family:"EB Garamond";
+background-color:#e0e0e0 ;
+
+	
+    animation-duration: 3s;
+  animation-name: slidein;
+background-repeat:no-repeat;
+
+
+
+	 text-align:center;
+     }
+
+     code {
+     background: #208bfd;
+     color: #f9f9f9;
+     padding: 0.1em 0.5em;
+     border-radius: 4px;
+background-color:#e0e0e0 ;
+     }
+
+     .image-placeholder {
+     margin: auto;
+     width: 80%;
+     max-width: 500px;
+ 
+     height: 300px;
+   background-repeat: no-repeat;
+ 
+     background-image: url(https://webdevtrick.com/wp-content/uploads/image-placeholder.png);
+ background-color:#e0e0e0 
+     }
+     @media (max-width: 420px) {
+     .image-placeholder {
+     width: 320px;
+     max-width: 320px;
+     height: 280px;
+     background-size: contain;
+     background-position: top left;
+     background-attachment: scroll;
+	 background-color:#e0e0e0 
+     }
+     }
+     header {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 4em;
+     background:#760080;
+     margin: 0 auto;
+     text-align: center;
+     color: #f9f9f9;
+     background-color:#e0e0e0 ;
+
+	 background-image:url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Aesthetic-HD-Pictures.jpg);
+     }
+     ::placeholder {
+     color: #212121;
+     }
+     input {
+     display: inline-block;
+     width: 100%;
+     max-width: 50%;
+     max-width: calc(100% - 8em);
+     min-height: 2.8em;
+     padding: 0.5em;
+     margin: 0.5em 0;
+     background: #f3f3f3;
+     border-color: #760080;
+     border-width: 1px;
+     color: #212121;
+     transition: all 500ms ease;
+     }
+     input:focus, input:hover {
+     border-colur : #760080;
+     transition: all 500ms ease;
+     }
+
+     @media (min-width: 420px) {
+     input {
+     max-width: 50%;
+     }
+     }
+     .search {
+     display: inline-block;
+     padding: 0 1em;
+     text-align: center;
+     min-width: 2.8em;
+     height: 2.8em;
+     margin: 0;
+     background: #208bfd;
+     border: 2px solid #212121;
+     color: #f9f9f9;
+     transition: all 500ms ease;
+     }
+     .search:focus, .search:hover {
+     background: #212121;
+     border-color: #f9f9f9;
+     cursor: pointer;
+     transition: all 500ms ease;
+     }
+        .result {
+     margin: 0 auto;
+     padding: 4em 1em;
+     max-width: 40em;
+     }
+     .result video, .result img {
+     width: calc(100% - 4em);
+     margin: 2em;
+     }
+     .result .download {
+     text-decoration: none;
+     display: inline-block;
+     padding: 0.5em 1em;
+     background: #208bfd;
+     border-color: #208bfd;
+     border-width: 1px;
+     color: #f9f9f9;
+     transition: all 500ms ease;
+     }
+     .result .download:focus, .result .download:hover {
+     background: #208bfd;
+     border-color: #f9f9f9;
+     cursor: pointer;
+     transition: all 500ms ease;
+     }
+     @media (max-width: 600px) {
+     .result {
+     position: absolute;
+     top: 4em;
+     left: 0;
+     right: 0;
+     height: calc(100% - 10em);
+     overflow-y: auto;
+     max-width: 40em;
+
+   
+     margin: auto;
+ background-color:#e0e0e0 
+     }
+     }
+     footer {
+     width: 100%;
+     margin: 2em auto;
+     text-align: center;
+     background-color:#e0e0e0 ;
+     }
+
+     @media (max-width: 600px) {
+     footer {
+     position: absolute;
+     bottom: 1em;
+     left: 0;
+     right: 0;
+     height: 2em;
+     }
+     }
+   ]]></b:skin>
+   </head>
+   <body>
+   <b:section class='main' id='main' showaddelement='yes'>
+     <b:widget id='HTML1' locked='false' title='' type='HTML'>
+       <b:widget-settings>
+         <b:widget-setting name='content'>&lt;main&gt;
+    &lt;header class=&quot;navbar&quot;&gt;
+      &lt;input type=&quot;text&quot; value=&quot;&quot; placeholder=&quot;Paste link here...&quot; /&gt;
+      &lt;button class=&quot;search&quot; onclick=&quot;getMedia()&quot;&gt;Get&lt;/button&gt;
+    &lt;/header&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+    &lt;section class=&quot;result&quot;&gt;
+      &lt;div class=&quot;image-placeholder&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+      &lt;p&gt; Copy Instagram image Or video URL and paste it on the field given in The top. &lt;/p&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;center&gt; &lt;h6&gt; Thank You for using Insta-down :D &lt;/h6&gt;&lt;/center&gt;
+
+
+
+
+   &lt;/section&gt;
+  &lt;/main&gt;</b:widget-setting>
+       </b:widget-settings>
+       <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+     </b:widget>
+   </b:section>
+   <script>
+   const _ = e =&gt; document.querySelector(e);
+   const render = _(&#39;.result&#39;);
+
+
+   // create video
+   const createVideo = data =&gt; {
+   let v = document.createElement(&#39;video&#39;);
+   v.id = &quot;instavideo&quot;;
+   v.src = data.content;
+   v.controls = true;
+   v.autoplay = true;
+
+   // create info
+   let info = document.createElement(&#39;p&#39;);
+   info.textContent = &quot;Click the right button on video and select download :D &quot;;
+
+   render.innerHTML = &quot;&quot;;
+   render.appendChild(v);
+   render.appendChild(info);
+   };
+   // create image
+   const createImg = data =&gt; {
+   // create image
+   let i = document.createElement(&#39;img&#39;);
+   i.id = &quot;instaImg&quot;;
+   i.src = data.content;
+
+   // create info
+   let info = document.createElement(&#39;p&#39;);
+   info.textContent = &quot;Click the right button on the image and select save image :D&quot;;
+
+   render.innerHTML = &quot;&quot;;
+   render.appendChild(i);
+   render.appendChild(info);
+
+   };
+
+   // extract html
+   const getMedia = () =&gt; {
+   render.innerHTML = &quot;<div class='image-placeholder'/>&quot;;
+   // get input value
+   let url = _(&#39;input&#39;).value;
+   if (url) {
+   fetch(url).
+   then(r =&gt; r.text()).
+   then(r =&gt; {
+   // render html
+   render.innerHTML = r;
+   // wait, find meta and create video or image
+   let w = setTimeout(() =&gt; {
+   let v = _(&#39;meta[property=&quot;og:video&quot;]&#39;);
+   if (v) {
+   createVideo(v);
+   } else {
+   let img = _(&#39;meta[property=&quot;og:image&quot;]&#39;);
+   if (img) {
+   createImg(img);
+   } else {
+   document.body.innerHTML = body;
+   alert(&#39;Error extracting Instagram image / video.&#39;);
+   };
+   }
+   clearTimeout(w);
+   }, 200);
+   });
+   } else {
+   _(&#39;input&#39;).setAttribute(&#39;placeholder&#39;, &#39;Invalid address, use a proper Insagram link&#39;);
+
+   }
+   };
+   </script>
+    
+
+   </body>
+   </html>
